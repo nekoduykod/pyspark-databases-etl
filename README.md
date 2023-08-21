@@ -1,7 +1,7 @@
 ## About The Project
 
 This PySpark ETL project was aimed to gain practice. Previous one was about a dataset replication between two databases using pandas, SQLAlchemy. While pandas is suitable for small datasets, for larger volumes like gigabytes and terabytes, Apache Spark becomes essential. Spark, an open-source distributed computing framework, handles extensive data processing.  PySpark, a Python API for Spark, marries Spark's power with Python's simplicity, making it a preferred choice for big data tasks.  
-The value of Python is high in data engineering. It is necessary to enhance Python expertise.
+Python's importance in data engineering is undeniable. It is important to enhance Python proficiency.
 
 <img src="img/pyspark%20proj.jpg" />
 
@@ -11,8 +11,7 @@ The scripts provide flexibility: one utilizes PySpark to extract MySQL data, per
 
 ## Prerequisites
 
-- Python 3.x; run "pip install pyspark" within a virtual environment.
-I used Python 3.10, PySpark 3.4.1
+- Python 3.x; run "pip install pyspark" within a virtual environment. I used Python 3.10, PySpark 3.4.1
 - MySQL and PostgreSQL installed and configured. I obtained a dataset from Kaggle
 - Download MySQL and PostgreSQL connector JAR files
 - For Windows users: Choose Java 8 and download winutils.exe from [here](https://github.com/steveloughran/winutils/tree/master/hadoop-3.0.0/bin)
