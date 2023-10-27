@@ -22,7 +22,6 @@ spark = SparkSession.builder \
 def extract():
     try:
         connection_url = f"jdbc:mysql://{mysql_host}:{mysql_port}/{mysql_database}?user={mysql_user}&password={mysql_password}"
-        # Read data into a Spark DataFrame
         table = 'imdb_data_final'
         df = spark.read.format("jdbc").options(
             url=connection_url,
