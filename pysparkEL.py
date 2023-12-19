@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 def create_spark_session():
     return SparkSession.builder \
-        .appName("COOL") \
+        .appName("Big_Poppa") \
         .config("spark.jars", "D:\\projects\\pyspark_replication\\connector\\mysql-connector-j-8.1.0.jar,"
                "D:\\projects\\pyspark_replication\\connector\\postgresql-42.6.0.jar") \
         .getOrCreate()

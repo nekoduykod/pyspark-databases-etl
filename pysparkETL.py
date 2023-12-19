@@ -6,9 +6,9 @@ from db_conn import get_db_conn
  
 load_dotenv()
 
-def create_spark_session(app_name):
+def create_spark_session():
     return SparkSession.builder \
-        .appName(app_name) \
+        .appName("Big_Poppa2") \
         .config("spark.jars", "D:\\projects\\pyspark_replication\\connector\\mysql-connector-j-8.1.0.jar,"
                "D:\\projects\\pyspark_replication\\connector\\postgresql-42.6.0.jar") \
         .getOrCreate()
@@ -37,7 +37,7 @@ def load(df, table, spark):
     print("Data imported successfully")
 
 if __name__ == "__main__":
-    spark = create_spark_session("Los_Gehts")
+    spark = create_spark_session()
     source_db_conn = get_db_conn(postgresql=False)
     table_name = 'imdb_data_final'
     extract(spark, source_db_conn, table_name)
