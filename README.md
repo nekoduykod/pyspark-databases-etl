@@ -1,4 +1,4 @@
-## I. PySpark ETL/EL
+# I. PySpark ETL/EL
 
 <img src="images/pyspark%20proj.jpg" />
 
@@ -32,7 +32,7 @@ Linux/macOS users: ensure compatibility with correct versions of Hadoop and Spar
 <img src="images/MySQL%20table%20PySpark%20tfmd_%20to%20Postgre.jpg" />
 
 
-## II. Pandas ETL/EL
+# II. Pandas ETL/EL
 
 <img src="images/pandas_overview.png" alt="blueprint" width="83%" />
 

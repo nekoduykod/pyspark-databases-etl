@@ -1,5 +1,1 @@
-pip install pyspark, python-dotenv 
-
-python main.py
-
-python main.py --apply_transform=False
+python main.py --extract_database='postgresql' --load_database='postgresql' --apply_transform=False
