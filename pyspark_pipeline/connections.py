@@ -14,6 +14,7 @@ def get_postgres_conn():
     pg_db = os.getenv("PG_DB")
     return f"jdbc:postgresql://localhost:5432/{pg_db}?user={pg_uid}&password={pg_pass}"
 
+
 def get_mysql_conn():
     mysql_host = os.getenv("MYSQL_HOST")
     mysql_port = os.getenv("MYSQL_PORT")

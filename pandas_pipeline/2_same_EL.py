@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 import pandas as pd
-from conn_db import get_db_conn 
+from conn_db import get_postgres_conn, get_mysql_conn
+
 
 class DataLoader:
     def __init__(self, source_conn, target_conn):
@@ -13,11 +14,15 @@ class DataLoader:
         return df
 
     def load(self, df, table):
-        df.to_sql(f'stg_{table}', self.target_engine,\
-                  if_exists='replace', index=False)
+        df.to_sql(f'stg_{table}', 
+                    self.target_engine,
+                    if_exists='replace', index=False)
 
-source_conn = get_db_conn(postgresql=False)
-target_conn = get_db_conn(postgresql=True)
+
+source_conn = get_postgres_conn() # adjust as needed
+target_conn = get_postgres_conn()
+
 data_loader = DataLoader(source_conn, target_conn)
 df = data_loader.extract('dbo.nba_forecast')
+
 data_loader.load(df, 'dbo.nba_forecast')

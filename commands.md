@@ -1,1 +1,0 @@
-python main.py --extract_database='postgresql' --load_database='postgresql' --apply_transform=False

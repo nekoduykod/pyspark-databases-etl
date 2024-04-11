@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 
 from pyspark.sql.functions import *
 
-from connections import get_mysql_conn, get_postgres_conn
+from pyspark_pipeline.connections import get_mysql_conn, get_postgres_conn
 
 
 load_dotenv()
@@ -27,7 +27,7 @@ def extract_from_postgres(spark, table):
     ).load()
     return df
 
-
+# adjust as you wish
 def any_transform(df):
     df.select("Title", "`IMDb-Rating`", "ReleaseYear") \
       .filter(col("`IMDb-Rating`") > 7.5) \
