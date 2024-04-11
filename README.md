@@ -21,13 +21,10 @@ Linux/macOS users: ensure compatibility with correct versions of Hadoop and Spar
 1. MySQL Dataset:   
 <img src="images/MySQL%20imdb%20dataset.jpg" />
 
-2. Data Loaded:
-<img src="images/data%20imported.jpg" />
-
-3. MySQL=>PostgreSQL using PySpark:
+2. MySQL=>PostgreSQL using PySpark:
 <img src="images/MySQL%20table%20PySpark%20loaded%20to%20Postgre.jpg" />
 
-4. Data with transformation imported:
+3. Data with transformation imported:
 <img src="images/Pyspark%20trsfmd%20MySQL%20to%20Postgre.jpg" />
 <img src="images/MySQL%20table%20PySpark%20tfmd_%20to%20Postgre.jpg" />
 
@@ -52,8 +49,7 @@ A small simple task: a pipeline "MS SQL Server=>PostgreSQL"
    Optionally: Schedule with Airflow
 
 ## Result
- 
-<img src="images/pandas_goal_achieved.png" alt="Data imported finally" />
+
 <p align="center">
   <img src="images/pandas_rows_match_after_repl.png" alt="Each byte replicated" width="50%">
 </p>
